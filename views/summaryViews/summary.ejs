@@ -1,0 +1,72 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1><em>Summary page</em></h1>
+
+        <p><%= currentUser.username %>, you currently have <strong><%= validTrades %></strong> 
+            closed trades and <strong><%= numberOfZeroProfitTrades %></strong> ongoing
+            <% if (numberOfZeroProfitTrades > 1) { %>
+                <%= "ones" %> 
+            <% } else { %>
+                <%= "one" %>
+            <% } %>.
+        </p> 
+
+        <p>The <strong><%= validTrades %></strong> closed
+            <% if (validTrades > 1) { %>
+                <%= "ones" %>
+            <% } else { %>
+                <%= "one" %>
+            <% } %>
+            have a combined return of
+            <strong>$<%= totalProfit.toFixed(2) %></strong></p>
+
+        
+        <% if ( numberOftradesOnSameDay  > 0 ) { %>
+            <p>You have previously taken <strong><%= numberOftradesOnSameDay %></strong>
+                <% if (numberOftradesOnSameDay === 1) { %>
+                    <%= "trade" %>
+                <% } else { %>
+                    <%= "trades" %>
+                <% } %> 
+                on a <strong><%= dayOfTrade %></strong> like today with a total
+                return of <strong>$<%= totalProfitOnSameDay.toFixed(2) %></strong>.</p>
+
+            <p><strong><%= buyOrders %></strong> of them
+                <% if ( buyOrders === 1 ) { %>
+                    <%= "is a" %>
+                <% } else { %>
+                    <%= "are" %>
+                <% } %>
+                BUY <% if ( buyOrders === 1 ) { %>
+                    <%= "trade" %>
+                <% } else { %>
+                    <%= "trades" %>
+                <% } %> <% if ( currencyPairs.buyCurrencyPairs.length !== 0 ) { %>
+                    for (<%= buyPairs %>)
+                <% } %>
+                and <strong><%= sellOrders %></strong> of them
+                <% if ( sellOrders === 1 ) { %>
+                    <%= "is a" %>
+                <% } else { %>
+                    <%= "are" %>
+                <% } %>
+                SELL 
+                <% if ( sellOrders === 1 ) { %>
+                        <%= "trade" %>
+                <% } else { %>
+                        <%= "trades" %>
+                <% } %> 
+                <% if ( currencyPairs.sellCurrencyPairs.length !== 0 ) { %>
+                    for (<%= sellPairs %>)
+                <% } %>.</p>
+        <% } else { %>
+            <p>You have not taken any trades before on a <%= dayOfTrade %> </p>
+        <% } %>
+
+        
+    </div>
+</div>
+
+<%- include ('../partials/footer') %>

@@ -1,0 +1,136 @@
+date,orderType,lotSize,currencyPair,profit,description
+2020.06.17 14:13:41,buy,0.2,goldmicro,-0.13,No comment
+2020.06.17 14:10:57,sell,0.2,usdzarmicro,-0.08,No comment
+2020.06.17 12:17:19,buy,0.2,usdzarmicro,-0.49,No comment
+2020.06.17 08:52:58,buy,0.02,usdzarmicro,-0.09,No comment
+2020.06.17 08:39:56,buy,0.02,eurusdmicro,0.03,No comment
+2020.06.16 23:17:14,buy,0.1,cadjpymicro,-0.19,No comment
+2020.06.16 20:59:27,buy,0.1,goldmicro,-0.46,No comment
+2020.06.16 19:45:15,buy,0.05,goldmicro,0.04,No comment
+2020.06.16 19:40:39,sell,0.05,audcadmicro,0.01,No comment
+2020.06.16 19:32:38,buy,0.05,audusdmicro,-0.08,No comment
+2020.06.16 17:18:21,buy,0.1,audchfmicro,-0.29,No comment
+2020.06.16 15:29:38,sell,0.1,euraudmicro,0.33,No comment
+2020.06.16 12:07:05,buy,0.1,audchfmicro,0.21,No comment
+2020.06.16 11:59:25,sell,0.2,usdcadmicro,0,No comment
+2020.06.16 11:53:01,buy,0.1,gbpchfmicro,-0.44,No comment
+2020.06.16 09:04:01,buy,0.05,gbpusdmicro,-0.13,No comment
+2020.06.16 08:33:35,buy,0.05,gbpusdmicro,0.01,No comment
+2020.06.15 20:26:07,sell,0.05,eurnzdmicro,0.03,No comment
+2020.06.15 19:45:16,buy,0.05,chfjpymicro,0.07,No comment
+2020.06.15 19:18:32,sell,0.1,usdzarmicro,0.45,No comment
+2020.06.15 15:48:15,buy,0.05,usdjpymicro,-0.08,ribbons
+2020.06.15 14:17:44,sell,0.2,cadjpymicro,-0.48,RIBBONS AND BOLLINGER
+2020.06.15 12:53:52,sell,0.3,eurusdmicro,-0.12,RIBBONS AND USINDEX
+2020.06.15 12:43:02,sell,0.2,audcadmicro,-0.07,RIBBONS
+2020.06.15 12:40:56,sell,0.1,audcadmicro,0,RIBBONS
+2020.06.15 11:41:05,buy,0.26,gbpaudmicro,-0.7,RIBBONS
+2020.06.15 07:20:11,sell,0.1,nzdjpymicro,-0.18,RIBBONS
+2020.06.15 00:58:33,sell,0.2,audjpymicro,0.14,RIBBONS
+2020.06.15 00:36:46,sell,0.1,audusdmicro,0.25,RIBBONS
+2020.06.15 00:24:05,sell,0.05,eurjpymicro,-0.08,RIBBONS
+2020.06.12 13:57:31,sell,0.05,euraudmicro,-0.07,No comment
+2020.06.12 13:51:32,buy,0.05,audnzdmicro,-0.09,No comment
+2020.06.12 13:39:51,sell,0.05,gbpaudmicro,0.23,No comment
+2020.06.11 12:40:20,buy,0.05,eurusdmicro,-0.28,crossUSIndex&EURUSDvolBTPSL
+2020.06.10 23:46:17,buy,0.05,eurusdmicro,-0.25,usindexholdingvolBasedTP&SL
+2020.06.09 12:20:37,sell,0.05,eurusdmicro,-0.14,usindexCrossEMAcrossVolSLTP
+2020.06.08 22:38:26,buy,0.4,eurusdmicro,-1.44,USDIndexdownCrossSL*2TP*4
+2020.06.08 09:33:50,sell,0.05,eurjpymicro,-0.15,EMACrossVolBasedSL*2TP*4
+2020.06.08 09:31:18,sell,0.05,eurusdmicro,-0.13,descendingTriangle
+2020.06.01 23:28:44,sell,0.07,gbpcadmicro,0.02,VOLbASEDtp*4sl*2emacROSS
+2020.06.01 12:00:06,buy,0.13,eurusdmicro,0.94,dollarIndexVolBasedSL*3TP*4
+2020.05.29 12:48:46,buy,0.05,eurusdmicro,0.42,USIndex dropping volBaSL&TP
+2020.05.28 19:37:20,buy,0.05,eurusdmicro,0.05,volBasedTP*4SL*2IndexFallin
+2020.05.28 19:32:48,buy,0.2,cadchfmicro,0.01,volBasedTP*4SL*2EMACrossCon
+2020.05.27 23:23:09,buy,0.2,usdzarmicro,-0.87,volBasedTP*4SL*2EMACrConsen
+2020.05.27 23:16:48,buy,0.2,chfjpymicro,-0.31,volBasedTP*4SL*2EMACroConse
+2020.05.27 23:04:38,buy,0.1,nzdcadmicro,-0.39,volBasedTP*4SL*2EMACroConse
+2020.05.27 19:52:42,buy,0.2,gbpaudmicro,-0.18,volBasedTP*4SL*2EMACrConsen
+2020.05.27 06:53:52,buy,0.2,audcadmicro,0.84,volBasedTP*4SL*2EMACrConlue
+2020.05.26 14:05:10,buy,0.2,gbpcadmicro,-0.46,No comment
+2020.05.26 06:28:11,buy,0.1,eurusdmicro,0.49,volBasedTP*4SL*2EMACross
+2020.05.25 21:04:26,buy,0.1,usdchfmicro,0.33,volBasedTP*4SL*2EMACross
+2020.05.25 20:53:03,buy,0.1,nzdjpymicro,0.24,volBasedTP*4SL*2EMACrAscTri
+2020.05.25 20:44:39,buy,0.1,gbpusdmicro,0.14,volBasedTP*4SL*2
+2020.05.21 10:53:20,buy,0.1,nzdusdmicro,-0.25,volBasedTP*4SL*2EMACross
+2020.05.21 10:44:37,buy,0.03,usdjpymicro,-0.07,No comment
+2020.05.20 20:10:15,buy,0.2,audchfmicro,0.08,No comment
+2020.05.20 10:11:05,buy,0.02,cadjpymicro,0.06,majo resistance
+2020.05.20 09:28:59,buy,0.21,audchfmicro,-0.61,volBasedSL*2TP*4EMACross
+2020.05.19 15:18:28,buy,0.1,audusdmicro,-0.7,volBasedSL*2TP*4
+2020.05.19 11:16:10,buy,0.5,eurnzdmicro,-0.19,volBasedSL*2TP*4
+2020.05.18 12:20:29,buy,0.2,euraudmicro,0.6,volBasedSL*2TP*4EMACross
+2020.05.18 12:03:58,buy,0.2,eurusdmicro,-0.24,volBasedSL*2TP*4EMACross
+2020.05.18 06:30:33,buy,0.2,usdjpymicro,-0.11,volBasedSL*2TP*4EMACross
+2020.05.14 22:49:37,buy,0.05,eurgbpmicro,-0.23,volBasedSL*2TP*4EMACross
+2020.05.14 15:03:56,buy,0.2,usdjpymicro,-0.38,volBasedSL*2TP*4EMACross
+2020.05.13 19:46:50,buy,0.02,usdchfmicro,-0.01,volBasedSL*2TP*4EMACross
+2020.05.13 12:18:58,buy,0.05,eurusdmicro,-0.11,volBasedSL*2TP*4EMACross
+2020.05.12 19:46:28,buy,0.05,cadjpymicro,0.31,volBasedSL*2TP*4
+2020.05.12 13:00:21,buy,0.1,eurusdmicro,0.56,volBasedSL*2TP*4
+2020.05.12 12:28:52,buy,0.02,usdchfmicro,0.04,volBasedSl*1TP*2
+2020.05.11 11:25:09,buy,0.05,usdchfmicro,-0.02,ian&kush&volSLTP&EMACross
+2020.05.11 11:17:25,buy,0.1,eurusdmicro,0.36,ian&kush&volSLTP&EMACross
+2020.05.06 13:16:42,buy,0.01,eurusdmicro,-0.01,ian&kush and volbased sl&tp
+2020.05.06 10:59:01,buy,0.01,gbpusdmicro,0.03,ian&kush and some volbased 
+2020.05.06 09:06:01,buy,0.01,audjpymicro,-0.01,No comment
+2020.05.05 20:08:10,buy,0.01,eurgbpmicro,-0.03,babypips & my own idea
+2020.05.04 09:07:10,buy,0.05,eurusdmicro,0.46,No comment
+2020.05.04 09:04:52,buy,0.01,eurusdmicro,0,Ian&Kush idea
+2020.04.21 12:35:43,buy,0.01,audchfmicro,-0.03,No comment
+2020.04.21 12:30:37,buy,0.01,audusdmicro,-0.09,Margaret Robot Idea
+2020.04.08 19:36:43,buy,0.01,cadjpymicro,0.11,No comment
+2020.04.08 19:23:43,buy,0.01,nzdcadmicro,0,ma cross enter at trendline
+2020.04.07 13:03:49,buy,0.01,gbpusdmicro,-0.07,support turned res. stoc ob
+2020.04.07 11:55:20,buy,0.01,nzdcadmicro,0,ma(sell sig) crossover
+2020.04.01 20:00:38,buy,0.01,gbpnzdmicro,0.08,No comment
+2020.03.30 19:37:18,buy,0.01,eurusdmicro,0.02,No comment
+2020.03.25 20:48:48,buy,0.1,nzdcadmicro,-0.31,No comment
+2020.03.25 19:54:20,buy,0.01,nzdcadmicro,-0.01,No comment
+2020.03.25 17:23:39,buy,0.01,usdsgdmicro,-0.08,No comment
+2020.03.25 10:55:34,buy,0.1,audjpymicro,-0.17,No comment
+2020.03.25 08:53:23,sell,0.03,eurusdmicro,0,No comment
+2020.03.23 19:40:33,sell,0.1,audjpymicro,-1.65,No comment
+2020.03.19 18:45:34,sell,0.1,eurjpymicro,-0.66,No comment
+2020.03.19 12:34:20,sell,0.1,eurjpymicro,-0.02,No comment
+2020.03.19 12:16:42,buy,0.01,usdchfmicro,0.01,No comment
+2020.03.19 10:48:07,sell,0.01,eurjpymicro,0.03,No comment
+2020.03.18 20:27:49,buy,0.02,eurcadmicro,-0.32,No comment
+2020.03.18 18:56:03,sell,0.01,nzdjpymicro,0.05,No comment
+2020.03.18 13:15:52,sell,0.1,gbpjpymicro,0.72,No comment
+2020.03.18 12:56:07,buy,0.03,eurgbpmicro,0.05,No comment
+2020.03.18 11:57:53,sell,0.01,gbpjpymicro,0.04,No comment
+2020.03.18 10:53:58,sell,0.01,nzdusdmicro,0.04,No comment
+2020.03.17 22:32:09,sell,0.02,audjpymicro,0.07,No comment
+2020.03.17 12:45:49,sell,0.1,nzdjpymicro,0.03,No comment
+2020.03.17 08:33:53,sell,0.1,nzdjpymicro,0.53,No comment
+2020.03.16 10:40:31,sell,0.01,audnzdmicro,0.01,No comment
+2020.03.12 13:59:24,sell,0.4,cadjpymicro,-1.47,No comment
+2020.03.12 12:24:37,sell,0.3,cadjpymicro,0.51,No comment
+2020.03.12 10:38:14,sell,0.1,audjpymicro,0.11,No comment
+2020.03.12 08:03:36,sell,0.1,audjpymicro,0.39,No comment
+2020.03.11 19:06:30,sell,0.2,gbpchfmicro,0.65,No comment
+2020.03.11 16:45:22,sell,0.2,gbpjpymicro,0.61,No comment
+2020.03.11 13:00:55,sell,0.1,gbpjpymicro,0.43,No comment
+2020.03.11 12:02:07,sell,0.1,eurjpymicro,0.1,No comment
+2020.03.11 07:01:55,buy,0.1,eurusdmicro,0.01,No comment
+2020.03.11 06:53:22,sell,0.1,gbpjpymicro,0.22,No comment
+2020.03.10 19:46:07,sell,0.1,usdjpymicro,0.01,No comment
+2020.03.10 16:58:23,sell,0.1,cadjpymicro,0.71,No comment
+2020.03.10 09:34:56,sell,0.01,eurjpymicro,0.07,fib trading and babypips
+2020.03.09 18:55:53,buy,0.02,eurcadmicro,0.15,No comment
+2020.03.09 16:28:35,buy,0.06,eurgbpmicro,0.15,No comment
+2020.03.09 14:29:46,buy,0.01,eurgbpmicro,0.06,No comment
+2020.03.09 13:40:21,sell,0.01,gbpchfmicro,-0.04,No comment
+2020.03.09 11:01:27,buy,0.01,gbpusdmicro,-0.2,trading divergence
+2020.03.06 17:46:01,sell,0.06,eurcadmicro,0.02,trading channel
+2020.03.05 16:45:48,sell,0.02,gbpchfmicro,0.07,No comment
+2020.03.05 14:21:44,buy,0.01,gbpaudmicro,0.05,No comment
+2020.03.03 19:13:55,buy,0.14,gbpusdmicro,-0.39,No comment
+2020.03.03 18:55:14,buy,0.02,gbpusdmicro,0,No comment
+2020.03.03 15:44:23,sell,0.1,eurusdmicro,-0.67,fib trading
+2020.03.03 13:53:56,sell,0.03,eurusdmicro,0.03,fib and divegencies
+2020.03.03 07:48:56,sell,0.1,nzdusdmicro,-0.13,fib trading
+2020.03.03 05:28:46,sell,0.02,usdjpymicro,0.03,fib trading
+2020.03.02 20:31:00,sell,0.01,gbpusdmicro,0.02,No comment

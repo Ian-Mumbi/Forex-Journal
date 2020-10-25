@@ -1,0 +1,75 @@
+.view-trade {
+    text-align: center;
+}
+
+.container-form {
+    width: 30%;
+    margin: 30px auto;
+}
+
+.delete-button {
+    display: inline-block;
+}
+
+.delete-form {
+    display: inline-block;
+}
+
+.heading {
+    text-align: center;
+}
+
+.trades-list a {
+    text-decoration: none;
+}
+
+p a .completed {
+    color: red;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,
+        rgba(94, 119, 228, 0.8),
+        rgba(24, 40, 95, 0.8)),
+    url('../images/img.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.text-box {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    animation: 2s moveInFromLeft ease-in;
+
+    backface-visibility: hidden;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 13px;
+    animation: 2s moveInFromRight ease-in;
+}
+
+.completed {
+    color: red;
+}

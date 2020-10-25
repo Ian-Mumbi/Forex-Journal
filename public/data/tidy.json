@@ -1,0 +1,1082 @@
+{
+    "0": {
+        "date": "2020-06-17",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "goldmicro",
+        "profit": -0.13,
+        "description": "No comment"
+    },
+    "1": {
+        "date": "2020-06-17",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "usdzarmicro",
+        "profit": -0.08,
+        "description": "No comment"
+    },
+    "2": {
+        "date": "2020-06-17",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "usdzarmicro",
+        "profit": -0.49,
+        "description": "No comment"
+    },
+    "3": {
+        "date": "2020-06-17",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "usdzarmicro",
+        "profit": -0.09,
+        "description": "No comment"
+    },
+    "4": {
+        "date": "2020-06-17",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.03,
+        "description": "No comment"
+    },
+    "5": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "cadjpymicro",
+        "profit": -0.19,
+        "description": "No comment"
+    },
+    "6": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "goldmicro",
+        "profit": -0.46,
+        "description": "No comment"
+    },
+    "7": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "goldmicro",
+        "profit": 0.04,
+        "description": "No comment"
+    },
+    "8": {
+        "date": "2020-06-16",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "audcadmicro",
+        "profit": 0.01,
+        "description": "No comment"
+    },
+    "9": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "audusdmicro",
+        "profit": -0.08,
+        "description": "No comment"
+    },
+    "10": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "audchfmicro",
+        "profit": -0.29,
+        "description": "No comment"
+    },
+    "11": {
+        "date": "2020-06-16",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "euraudmicro",
+        "profit": 0.33,
+        "description": "No comment"
+    },
+    "12": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "audchfmicro",
+        "profit": 0.21,
+        "description": "No comment"
+    },
+    "13": {
+        "date": "2020-06-16",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "usdcadmicro",
+        "profit": 0.0,
+        "description": "No comment"
+    },
+    "14": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "gbpchfmicro",
+        "profit": -0.44,
+        "description": "No comment"
+    },
+    "15": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "gbpusdmicro",
+        "profit": -0.13,
+        "description": "No comment"
+    },
+    "16": {
+        "date": "2020-06-16",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "gbpusdmicro",
+        "profit": 0.01,
+        "description": "No comment"
+    },
+    "17": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "eurnzdmicro",
+        "profit": 0.03,
+        "description": "No comment"
+    },
+    "18": {
+        "date": "2020-06-15",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "chfjpymicro",
+        "profit": 0.07,
+        "description": "No comment"
+    },
+    "19": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "usdzarmicro",
+        "profit": 0.45,
+        "description": "No comment"
+    },
+    "20": {
+        "date": "2020-06-15",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "usdjpymicro",
+        "profit": -0.08,
+        "description": "ribbons"
+    },
+    "21": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "cadjpymicro",
+        "profit": -0.48,
+        "description": "RIBBONS AND BOLLINGER"
+    },
+    "22": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.3,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.12,
+        "description": "RIBBONS AND USINDEX"
+    },
+    "23": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "audcadmicro",
+        "profit": -0.07,
+        "description": "RIBBONS"
+    },
+    "24": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "audcadmicro",
+        "profit": 0.0,
+        "description": "RIBBONS"
+    },
+    "25": {
+        "date": "2020-06-15",
+        "orderType": "buy",
+        "lotSize": 0.26,
+        "currencyPair": "gbpaudmicro",
+        "profit": -0.7,
+        "description": "RIBBONS"
+    },
+    "26": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "nzdjpymicro",
+        "profit": -0.18,
+        "description": "RIBBONS"
+    },
+    "27": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "audjpymicro",
+        "profit": 0.14,
+        "description": "RIBBONS"
+    },
+    "28": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "audusdmicro",
+        "profit": 0.25,
+        "description": "RIBBONS"
+    },
+    "29": {
+        "date": "2020-06-15",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "eurjpymicro",
+        "profit": -0.08,
+        "description": "RIBBONS"
+    },
+    "30": {
+        "date": "2020-06-12",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "euraudmicro",
+        "profit": -0.07,
+        "description": "No comment"
+    },
+    "31": {
+        "date": "2020-06-12",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "audnzdmicro",
+        "profit": -0.09,
+        "description": "No comment"
+    },
+    "32": {
+        "date": "2020-06-12",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "gbpaudmicro",
+        "profit": 0.23,
+        "description": "No comment"
+    },
+    "33": {
+        "date": "2020-06-11",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.28,
+        "description": "crossUSIndex&EURUSDvolBTPSL"
+    },
+    "34": {
+        "date": "2020-06-10",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.25,
+        "description": "usindexholdingvolBasedTP&SL"
+    },
+    "35": {
+        "date": "2020-06-09",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.14,
+        "description": "usindexCrossEMAcrossVolSLTP"
+    },
+    "36": {
+        "date": "2020-06-08",
+        "orderType": "buy",
+        "lotSize": 0.4,
+        "currencyPair": "eurusdmicro",
+        "profit": -1.44,
+        "description": "USDIndexdownCrossSL*2TP*4"
+    },
+    "37": {
+        "date": "2020-06-08",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "eurjpymicro",
+        "profit": -0.15,
+        "description": "EMACrossVolBasedSL*2TP*4"
+    },
+    "38": {
+        "date": "2020-06-08",
+        "orderType": "sell",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.13,
+        "description": "descendingTriangle"
+    },
+    "39": {
+        "date": "2020-06-01",
+        "orderType": "sell",
+        "lotSize": 0.07,
+        "currencyPair": "gbpcadmicro",
+        "profit": 0.02,
+        "description": "VOLbASEDtp*4sl*2emacROSS"
+    },
+    "40": {
+        "date": "2020-06-01",
+        "orderType": "buy",
+        "lotSize": 0.13,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.94,
+        "description": "dollarIndexVolBasedSL*3TP*4"
+    },
+    "41": {
+        "date": "2020-05-29",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.42,
+        "description": "USIndex dropping volBaSL&TP"
+    },
+    "42": {
+        "date": "2020-05-28",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.05,
+        "description": "volBasedTP*4SL*2IndexFallin"
+    },
+    "43": {
+        "date": "2020-05-28",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "cadchfmicro",
+        "profit": 0.01,
+        "description": "volBasedTP*4SL*2EMACrossCon"
+    },
+    "44": {
+        "date": "2020-05-27",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "usdzarmicro",
+        "profit": -0.87,
+        "description": "volBasedTP*4SL*2EMACrConsen"
+    },
+    "45": {
+        "date": "2020-05-27",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "chfjpymicro",
+        "profit": -0.31,
+        "description": "volBasedTP*4SL*2EMACroConse"
+    },
+    "46": {
+        "date": "2020-05-27",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "nzdcadmicro",
+        "profit": -0.39,
+        "description": "volBasedTP*4SL*2EMACroConse"
+    },
+    "47": {
+        "date": "2020-05-27",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "gbpaudmicro",
+        "profit": -0.18,
+        "description": "volBasedTP*4SL*2EMACrConsen"
+    },
+    "48": {
+        "date": "2020-05-27",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "audcadmicro",
+        "profit": 0.84,
+        "description": "volBasedTP*4SL*2EMACrConlue"
+    },
+    "49": {
+        "date": "2020-05-26",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "gbpcadmicro",
+        "profit": -0.46,
+        "description": "No comment"
+    },
+    "50": {
+        "date": "2020-05-26",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.49,
+        "description": "volBasedTP*4SL*2EMACross"
+    },
+    "51": {
+        "date": "2020-05-25",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "usdchfmicro",
+        "profit": 0.33,
+        "description": "volBasedTP*4SL*2EMACross"
+    },
+    "52": {
+        "date": "2020-05-25",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "nzdjpymicro",
+        "profit": 0.24,
+        "description": "volBasedTP*4SL*2EMACrAscTri"
+    },
+    "53": {
+        "date": "2020-05-25",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "gbpusdmicro",
+        "profit": 0.14,
+        "description": "volBasedTP*4SL*2"
+    },
+    "54": {
+        "date": "2020-05-21",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "nzdusdmicro",
+        "profit": -0.25,
+        "description": "volBasedTP*4SL*2EMACross"
+    },
+    "55": {
+        "date": "2020-05-21",
+        "orderType": "buy",
+        "lotSize": 0.03,
+        "currencyPair": "usdjpymicro",
+        "profit": -0.07,
+        "description": "No comment"
+    },
+    "56": {
+        "date": "2020-05-20",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "audchfmicro",
+        "profit": 0.08,
+        "description": "No comment"
+    },
+    "57": {
+        "date": "2020-05-20",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "cadjpymicro",
+        "profit": 0.06,
+        "description": "majo resistance"
+    },
+    "58": {
+        "date": "2020-05-20",
+        "orderType": "buy",
+        "lotSize": 0.21,
+        "currencyPair": "audchfmicro",
+        "profit": -0.61,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "59": {
+        "date": "2020-05-19",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "audusdmicro",
+        "profit": -0.7,
+        "description": "volBasedSL*2TP*4"
+    },
+    "60": {
+        "date": "2020-05-19",
+        "orderType": "buy",
+        "lotSize": 0.5,
+        "currencyPair": "eurnzdmicro",
+        "profit": -0.19,
+        "description": "volBasedSL*2TP*4"
+    },
+    "61": {
+        "date": "2020-05-18",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "euraudmicro",
+        "profit": 0.6,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "62": {
+        "date": "2020-05-18",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.24,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "63": {
+        "date": "2020-05-18",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "usdjpymicro",
+        "profit": -0.11,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "64": {
+        "date": "2020-05-14",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurgbpmicro",
+        "profit": -0.23,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "65": {
+        "date": "2020-05-14",
+        "orderType": "buy",
+        "lotSize": 0.2,
+        "currencyPair": "usdjpymicro",
+        "profit": -0.38,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "66": {
+        "date": "2020-05-13",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "usdchfmicro",
+        "profit": -0.01,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "67": {
+        "date": "2020-05-13",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.11,
+        "description": "volBasedSL*2TP*4EMACross"
+    },
+    "68": {
+        "date": "2020-05-12",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "cadjpymicro",
+        "profit": 0.31,
+        "description": "volBasedSL*2TP*4"
+    },
+    "69": {
+        "date": "2020-05-12",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.56,
+        "description": "volBasedSL*2TP*4"
+    },
+    "70": {
+        "date": "2020-05-12",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "usdchfmicro",
+        "profit": 0.04,
+        "description": "volBasedSl*1TP*2"
+    },
+    "71": {
+        "date": "2020-05-11",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "usdchfmicro",
+        "profit": -0.02,
+        "description": "ian&kush&volSLTP&EMACross"
+    },
+    "72": {
+        "date": "2020-05-11",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.36,
+        "description": "ian&kush&volSLTP&EMACross"
+    },
+    "73": {
+        "date": "2020-05-06",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.01,
+        "description": "ian&kush and volbased sl&tp"
+    },
+    "74": {
+        "date": "2020-05-06",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "gbpusdmicro",
+        "profit": 0.03,
+        "description": "ian&kush and some volbased "
+    },
+    "75": {
+        "date": "2020-05-06",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "audjpymicro",
+        "profit": -0.01,
+        "description": "No comment"
+    },
+    "76": {
+        "date": "2020-05-05",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "eurgbpmicro",
+        "profit": -0.03,
+        "description": "babypips & my own idea"
+    },
+    "77": {
+        "date": "2020-05-04",
+        "orderType": "buy",
+        "lotSize": 0.05,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.46,
+        "description": "No comment"
+    },
+    "78": {
+        "date": "2020-05-04",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.0,
+        "description": "Ian&Kush idea"
+    },
+    "79": {
+        "date": "2020-04-21",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "audchfmicro",
+        "profit": -0.03,
+        "description": "No comment"
+    },
+    "80": {
+        "date": "2020-04-21",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "audusdmicro",
+        "profit": -0.09,
+        "description": "Margaret Robot Idea"
+    },
+    "81": {
+        "date": "2020-04-08",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "cadjpymicro",
+        "profit": 0.11,
+        "description": "No comment"
+    },
+    "82": {
+        "date": "2020-04-08",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "nzdcadmicro",
+        "profit": 0.0,
+        "description": "ma cross enter at trendline"
+    },
+    "83": {
+        "date": "2020-04-07",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "gbpusdmicro",
+        "profit": -0.07,
+        "description": "support turned res. stoc ob"
+    },
+    "84": {
+        "date": "2020-04-07",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "nzdcadmicro",
+        "profit": 0.0,
+        "description": "ma(sell sig) crossover"
+    },
+    "85": {
+        "date": "2020-04-01",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "gbpnzdmicro",
+        "profit": 0.08,
+        "description": "No comment"
+    },
+    "86": {
+        "date": "2020-03-30",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.02,
+        "description": "No comment"
+    },
+    "87": {
+        "date": "2020-03-25",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "nzdcadmicro",
+        "profit": -0.31,
+        "description": "No comment"
+    },
+    "88": {
+        "date": "2020-03-25",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "nzdcadmicro",
+        "profit": -0.01,
+        "description": "No comment"
+    },
+    "89": {
+        "date": "2020-03-25",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "usdsgdmicro",
+        "profit": -0.08,
+        "description": "No comment"
+    },
+    "90": {
+        "date": "2020-03-25",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "audjpymicro",
+        "profit": -0.17,
+        "description": "No comment"
+    },
+    "91": {
+        "date": "2020-03-25",
+        "orderType": "sell",
+        "lotSize": 0.03,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.0,
+        "description": "No comment"
+    },
+    "92": {
+        "date": "2020-03-23",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "audjpymicro",
+        "profit": -1.65,
+        "description": "No comment"
+    },
+    "93": {
+        "date": "2020-03-19",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "eurjpymicro",
+        "profit": -0.66,
+        "description": "No comment"
+    },
+    "94": {
+        "date": "2020-03-19",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "eurjpymicro",
+        "profit": -0.02,
+        "description": "No comment"
+    },
+    "95": {
+        "date": "2020-03-19",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "usdchfmicro",
+        "profit": 0.01,
+        "description": "No comment"
+    },
+    "96": {
+        "date": "2020-03-19",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "eurjpymicro",
+        "profit": 0.03,
+        "description": "No comment"
+    },
+    "97": {
+        "date": "2020-03-18",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "eurcadmicro",
+        "profit": -0.32,
+        "description": "No comment"
+    },
+    "98": {
+        "date": "2020-03-18",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "nzdjpymicro",
+        "profit": 0.05,
+        "description": "No comment"
+    },
+    "99": {
+        "date": "2020-03-18",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "gbpjpymicro",
+        "profit": 0.72,
+        "description": "No comment"
+    },
+    "100": {
+        "date": "2020-03-18",
+        "orderType": "buy",
+        "lotSize": 0.03,
+        "currencyPair": "eurgbpmicro",
+        "profit": 0.05,
+        "description": "No comment"
+    },
+    "101": {
+        "date": "2020-03-18",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "gbpjpymicro",
+        "profit": 0.04,
+        "description": "No comment"
+    },
+    "102": {
+        "date": "2020-03-18",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "nzdusdmicro",
+        "profit": 0.04,
+        "description": "No comment"
+    },
+    "103": {
+        "date": "2020-03-17",
+        "orderType": "sell",
+        "lotSize": 0.02,
+        "currencyPair": "audjpymicro",
+        "profit": 0.07,
+        "description": "No comment"
+    },
+    "104": {
+        "date": "2020-03-17",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "nzdjpymicro",
+        "profit": 0.03,
+        "description": "No comment"
+    },
+    "105": {
+        "date": "2020-03-17",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "nzdjpymicro",
+        "profit": 0.53,
+        "description": "No comment"
+    },
+    "106": {
+        "date": "2020-03-16",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "audnzdmicro",
+        "profit": 0.01,
+        "description": "No comment"
+    },
+    "107": {
+        "date": "2020-03-12",
+        "orderType": "sell",
+        "lotSize": 0.4,
+        "currencyPair": "cadjpymicro",
+        "profit": -1.47,
+        "description": "No comment"
+    },
+    "108": {
+        "date": "2020-03-12",
+        "orderType": "sell",
+        "lotSize": 0.3,
+        "currencyPair": "cadjpymicro",
+        "profit": 0.51,
+        "description": "No comment"
+    },
+    "109": {
+        "date": "2020-03-12",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "audjpymicro",
+        "profit": 0.11,
+        "description": "No comment"
+    },
+    "110": {
+        "date": "2020-03-12",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "audjpymicro",
+        "profit": 0.39,
+        "description": "No comment"
+    },
+    "111": {
+        "date": "2020-03-11",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "gbpchfmicro",
+        "profit": 0.65,
+        "description": "No comment"
+    },
+    "112": {
+        "date": "2020-03-11",
+        "orderType": "sell",
+        "lotSize": 0.2,
+        "currencyPair": "gbpjpymicro",
+        "profit": 0.61,
+        "description": "No comment"
+    },
+    "113": {
+        "date": "2020-03-11",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "gbpjpymicro",
+        "profit": 0.43,
+        "description": "No comment"
+    },
+    "114": {
+        "date": "2020-03-11",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "eurjpymicro",
+        "profit": 0.1,
+        "description": "No comment"
+    },
+    "115": {
+        "date": "2020-03-11",
+        "orderType": "buy",
+        "lotSize": 0.1,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.01,
+        "description": "No comment"
+    },
+    "116": {
+        "date": "2020-03-11",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "gbpjpymicro",
+        "profit": 0.22,
+        "description": "No comment"
+    },
+    "117": {
+        "date": "2020-03-10",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "usdjpymicro",
+        "profit": 0.01,
+        "description": "No comment"
+    },
+    "118": {
+        "date": "2020-03-10",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "cadjpymicro",
+        "profit": 0.71,
+        "description": "No comment"
+    },
+    "119": {
+        "date": "2020-03-10",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "eurjpymicro",
+        "profit": 0.07,
+        "description": "fib trading and babypips"
+    },
+    "120": {
+        "date": "2020-03-09",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "eurcadmicro",
+        "profit": 0.15,
+        "description": "No comment"
+    },
+    "121": {
+        "date": "2020-03-09",
+        "orderType": "buy",
+        "lotSize": 0.06,
+        "currencyPair": "eurgbpmicro",
+        "profit": 0.15,
+        "description": "No comment"
+    },
+    "122": {
+        "date": "2020-03-09",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "eurgbpmicro",
+        "profit": 0.06,
+        "description": "No comment"
+    },
+    "123": {
+        "date": "2020-03-09",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "gbpchfmicro",
+        "profit": -0.04,
+        "description": "No comment"
+    },
+    "124": {
+        "date": "2020-03-09",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "gbpusdmicro",
+        "profit": -0.2,
+        "description": "trading divergence"
+    },
+    "125": {
+        "date": "2020-03-06",
+        "orderType": "sell",
+        "lotSize": 0.06,
+        "currencyPair": "eurcadmicro",
+        "profit": 0.02,
+        "description": "trading channel"
+    },
+    "126": {
+        "date": "2020-03-05",
+        "orderType": "sell",
+        "lotSize": 0.02,
+        "currencyPair": "gbpchfmicro",
+        "profit": 0.07,
+        "description": "No comment"
+    },
+    "127": {
+        "date": "2020-03-05",
+        "orderType": "buy",
+        "lotSize": 0.01,
+        "currencyPair": "gbpaudmicro",
+        "profit": 0.05,
+        "description": "No comment"
+    },
+    "128": {
+        "date": "2020-03-03",
+        "orderType": "buy",
+        "lotSize": 0.14,
+        "currencyPair": "gbpusdmicro",
+        "profit": -0.39,
+        "description": "No comment"
+    },
+    "129": {
+        "date": "2020-03-03",
+        "orderType": "buy",
+        "lotSize": 0.02,
+        "currencyPair": "gbpusdmicro",
+        "profit": 0.0,
+        "description": "No comment"
+    },
+    "130": {
+        "date": "2020-03-03",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "eurusdmicro",
+        "profit": -0.67,
+        "description": "fib trading"
+    },
+    "131": {
+        "date": "2020-03-03",
+        "orderType": "sell",
+        "lotSize": 0.03,
+        "currencyPair": "eurusdmicro",
+        "profit": 0.03,
+        "description": "fib and divegencies"
+    },
+    "132": {
+        "date": "2020-03-03",
+        "orderType": "sell",
+        "lotSize": 0.1,
+        "currencyPair": "nzdusdmicro",
+        "profit": -0.13,
+        "description": "fib trading"
+    },
+    "133": {
+        "date": "2020-03-03",
+        "orderType": "sell",
+        "lotSize": 0.02,
+        "currencyPair": "usdjpymicro",
+        "profit": 0.03,
+        "description": "fib trading"
+    },
+    "134": {
+        "date": "2020-03-02",
+        "orderType": "sell",
+        "lotSize": 0.01,
+        "currencyPair": "gbpusdmicro",
+        "profit": 0.02,
+        "description": "No comment"
+    }
+}

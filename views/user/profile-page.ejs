@@ -1,0 +1,13 @@
+<%- include ('../partials/header') %>
+
+<h1>Welcome to your profile page <%= currentUser.username %></h1>
+
+
+<form action="/upload" method="POST" enctype="multipart/form-data"> 
+    <div class="form-group">
+        <input type="file" name="uploaded_file" class="form-control-file">
+        <button class="btn btn-default">Save</button>
+    </div>
+</form>
+
+<%- include ('../partials/footer') %>

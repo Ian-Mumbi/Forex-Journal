@@ -1,0 +1,34 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+    <div class="row">
+        <h1 class="heading">Add a new trade here</h1>
+        <div class="container-form ">
+            <form action="/trades" method="POST">
+                <div class="form-group">
+                    <input type="text" name="description" placeholder="Description" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="currencyPair" placeholder="Currency Pair" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="profit" placeholder="Profit" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="orderType" placeholder="Order Type" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="lotSize" placeholder="LotSize" min="0.01" max="1.0" step="0.01" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="date" name="date" placeholder="OPen Date" class="form-control">
+                </div>
+                 <div class="form-group">
+                     <button class="btn btn-lg btn-success btn-block">Submit</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include ('../partials/footer') %>

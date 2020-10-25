@@ -1,0 +1,44 @@
+<%- include ('../partials/header') %>
+<div class="container">
+    <div class="jumbotron">
+        <h1><%= currentUser.username %>, <% if (trades.length > 1) { %>
+            <%= " here are all your"%> <%=trades.length%> <%="trades"%>.
+        <% } else if (trades.length === 1) { %>
+            <%= " here is your "%> <%= trades.length %> <%= "trade" %>.
+        <% } else { %>
+            <%= "you currently have no trades."%>
+        <% } %> </h1>
+        <a href="/trades/new" class="btn btn-large btn-primary">Create Trade</a>
+        <% if (trades.length !== 0) { %>
+            <a href="/summary" class="btn btn-large btn-success">Get Summary</a>
+        <% } %>
+    </div>
+
+    <form action="/trades/sortBy" method="POST">
+        <select name="sort" id="">
+            <option value="lotSize">Lot Size</option>
+            <option value="profit">Profit</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <% if (sortBy) { %>
+        <p>Sorting by: <strong><em><%= sortBy.toUpperCase() %></em></strong></p>
+    <% } %>
+    <div class="well">
+        <div class="trades-list">
+            <ol>
+                <% trades.forEach(( trade ) => { %>
+                <% if (trade.trader.id.equals(user._id)) { %>
+                <% if (!trade.profit) { %>
+                <li class="completed"><a class="completed" href="/trades/<%= trade._id %>"><%= trade.description %></a></li>
+                <% } else { %>
+                <li><a href="/trades/<%= trade._id %>"><%= trade.description %></a></li>
+                <% } %>
+
+                <% } %>
+                <% }) %>
+            </ol>
+        </div>
+    </div>
+</div>
+<%- include ('../partials/footer') %>

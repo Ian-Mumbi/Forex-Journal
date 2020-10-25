@@ -1,0 +1,84 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h2 class="description"><%= trade.description %></h2>
+                    <p>You took this trade on <em><strong><%= date %></strong></em> for
+                        <strong><%= trade.currencyPair %></strong>. It was a <strong><%= trade.orderType %></strong>
+                        order.</p>
+                    <p><% if (Number(trade.profit) > 0)  { %>
+                            <%= "You made a profit of " %>
+                        <% } else if (Number(trade.profit) < 0) { %>
+                            <%= "You made a loss of " %>
+                        <% } else { %>
+                            <%= "The trade seems not to have been closed yet." %>
+                        <% } %>
+
+                        <% if (!Number(trade.profit)) { %>
+                            You have a lot size of <em><strong><%= trade.lotSize %></strong></em>.
+                        <% } else { %>
+                            <em><strong><%= trade.profit %></strong></em>
+                            dollars from a lot size of
+                            <em><strong><%= trade.lotSize %></strong></em>.
+                            <!-- Only show form if the trade is closed and has a profit or loss value -->
+                            <form action="/trades/<%= trade._id %>/summary" method="POST">
+                                <select name="sort">
+                                    <option value="lotSize">Lot Size</option>
+                                    <option value="profit">Profit</option>
+                                </select>
+                                <button class="btn btn-primary btn-large">Show trade position</button>
+                            </form>
+                        <% } %>
+                    </p>
+                
+                    <% if (toggler) { %>
+                    <p>This trade is position <%= index %> in your list of trades on terms of
+                        <% if (sortBy === "profit")  { %>
+                        <%= "profitability" %>
+                        <% } else { %>
+                        <%= "lot Size" %>
+                        <% } %>
+                        (Selected sort option: <%= sortBy %>).</p>
+                    <% } %>
+                    
+                    <% if ( currentUser && trade.trader.id.equals(currentUser._id) ) { %>
+                        <a href="/trades/<%= trade._id %>/edit" class="btn btn-warning btn-small">Edit</a>
+                        <form action="/trades/<%= trade._id %>?_method=DELETE" method="POST" class="delete-button">
+                            <button class="btn btn-large btn-danger">Delete</button>
+                        </form>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="text-right">
+                    <a href="/trades/<%= trade._id %>/comments/new" class="btn btn-primary btn-large">Add a comment</a>
+                </div>
+
+                <hr>
+
+                <% trade.comments.forEach(comment => { %>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><em><%= comment.text %></em> - <%= commentTime %></p>
+
+                        <% if ( currentUser && comment.trader.id.equals(currentUser._id) ) { %>
+                            <a href="/trades/<%= trade.id %>/comments/<%= comment._id %>/edit" 
+                                class="btn btn-warning btn-xs" >Edit</a>
+
+                            <form class="delete-form" action="/trades/<%= trade.id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                                <button class="btn btn-xs btn-danger">Delete</button>
+                            </form>
+                        <% } %>
+                    </div>
+                </div>
+                <% }) %>
+
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ('../partials/footer') %>
