@@ -20,7 +20,7 @@
                 <%= "one" %>
             <% } %>
             have a combined return of
-            <strong>$<%= totalProfit.toFixed(2) %></strong></p>
+            <strong>$<%= totalProfit %></strong></p>
 
         
         <% if ( numberOftradesOnSameDay  > 0 ) { %>
@@ -31,7 +31,7 @@
                     <%= "trades" %>
                 <% } %> 
                 on a <strong><%= dayOfTrade %></strong> like today with a total
-                return of <strong>$<%= totalProfitOnSameDay.toFixed(2) %></strong>.</p>
+                return of <strong>$<%= totalProfitOnSameDay %></strong>.</p>
 
             <p><strong><%= buyOrders %></strong> of them
                 <% if ( buyOrders === 1 ) { %>

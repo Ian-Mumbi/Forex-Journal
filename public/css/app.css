@@ -73,3 +73,24 @@ p a .completed {
 .completed {
     color: red;
 }
+
+.main-header-trades {
+    margin-left: 10px;
+}
+
+#profile-image-preview {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#profile-image {
+    height: 100%;
+    width: 100%;
+}
+
+.center-profile-image {
+    text-align: center;
+}

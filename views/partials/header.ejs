@@ -3,6 +3,7 @@
 <html>
     <header>
         <title>Forex Journal</title>
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/app.css">
     </header>
@@ -10,11 +11,16 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="/" class="navbar-brand">Journal</a>
+                    <a href="/trades" class="navbar-brand">Journal</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <% if (currentUser) { %>
+                            <p id="profile-image-preview">
+                                <a href="/profile">
+                                    <img id="profile-image" src="/profile.png" alt="Profile picture" class="rounded mx-auto d-block">
+                                </a>
+                            </p>
                             <li><a href="/profile">Hey! Welcome <%= currentUser.username %></a></li>
                             <li><a href="/logout">Logout</a></li>
                         <% } else { %>
@@ -25,3 +31,12 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container">
+            <% if (error && error.length > 0) { %>
+                <div class="alert alert-danger" role="alert"><%= error %></div>
+            <% } %>
+            <% if (success && success.length > 0) { %>
+                <div class="alert alert-success" role="alert"><%= success %></div>
+            <% } %>
+        </div>

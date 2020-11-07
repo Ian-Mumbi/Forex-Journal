@@ -60,21 +60,21 @@
 
                 <hr>
 
-                <% trade.comments.forEach(comment => { %>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p><em><%= comment.text %></em> - <%= commentTime %></p>
+                <% trade.comments.forEach( ( comment, index ) => { %>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><em><%= comment.text %></em> - <%= commentTimeArray[index] %></p>
 
-                        <% if ( currentUser && comment.trader.id.equals(currentUser._id) ) { %>
-                            <a href="/trades/<%= trade.id %>/comments/<%= comment._id %>/edit" 
-                                class="btn btn-warning btn-xs" >Edit</a>
+                            <% if ( currentUser && comment.trader.id.equals(currentUser._id) ) { %>
+                                <a href="/trades/<%= trade.id %>/comments/<%= comment._id %>/edit" 
+                                    class="btn btn-warning btn-xs" >Edit</a>
 
-                            <form class="delete-form" action="/trades/<%= trade.id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-                                <button class="btn btn-xs btn-danger">Delete</button>
-                            </form>
-                        <% } %>
-                    </div>
-                </div>
+                                <form class="delete-form" action="/trades/<%= trade.id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                                    <button class="btn btn-xs btn-danger">Delete</button>
+                                </form>
+                            <% } %>
+                        </div>
+                    </div>        
                 <% }) %>
 
             </div>

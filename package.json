@@ -1,14 +1,19 @@
 {
   "name": "yelpcamp",
   "version": "2.0.0",
-  "description": "YelpCamp with updated packages",
+  "description": "Forex Journal",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "jest --watchAll"
+    "dev": "env-cmd -f ./config/dev.env nodemon -e js,ejs,css,scss,html app.js",
+    "test": "env-cmd -f ./config/test.env jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^7.3.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
@@ -17,15 +22,23 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "fast-csv": "^4.3.1",
-    "jest": "^26.1.0",
     "method-override": "^3.0.0",
     "moment": "^2.27.0",
     "mongoose": "^5.9.18",
     "multer": "^1.4.2",
+    "nodemon": "^2.0.6",
     "passport": "0.3.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1",
+    "paypal-rest-sdk": "^1.8.1",
     "request": "^2.88.2",
+    "sharp": "^0.26.2",
+    "stripe": "^8.117.0",
+    "supertest": "^6.0.0",
     "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^26.1.0"
   }
 }

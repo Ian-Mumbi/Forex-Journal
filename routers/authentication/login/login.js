@@ -16,6 +16,8 @@ router.post(
   passport.authenticate("local", {
     failureRedirect: "/login",
     successRedirect: "/trades",
+    failureFlash: 'Wrong username or password! Please try again',
+    successFlash: 'Successfully logged in!'
   })
 );
 

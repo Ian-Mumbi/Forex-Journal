@@ -29,6 +29,7 @@ router.post('/trades/:id/comments', isLoggedinMiddleware, async ( req, res ) => 
 
       await trade.save().then(async () => {
           await newComment.save()
+          req.flash('success', 'Your comment has been saved successfully!')
           res.redirect('/trades/'+req.params.id)
       })
     } catch (e) {
@@ -53,6 +54,7 @@ router.patch("/trades/:tradeId/comments/:commentId", isOwnerOfCommentMiddleware,
         const commentToUpdate = req.params.commentId
 
         await (await Comment.findByIdAndUpdate(commentToUpdate, { text: updatedCommentText })).save()
+        req.flash('success', 'Comment updated!!')
         res.redirect('/trades/' + req.params.tradeId)
     } catch (e) {
         res.status(400).send('Error in /POST route to update the comment.')
@@ -62,6 +64,7 @@ router.patch("/trades/:tradeId/comments/:commentId", isOwnerOfCommentMiddleware,
 router.delete('/trades/:tradeId/comments/:commentId', isOwnerOfCommentMiddleware, async ( req, res ) => {
     try {
         await Comment.findOneAndDelete(req.params.commentId)
+        req.flash('success', 'Comment Deleted!')
         res.redirect('/trades/' + req.params.tradeId)
     } catch (e) {
         res.status(400).send('Error in /DELETE comment route.')

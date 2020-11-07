@@ -7,7 +7,7 @@ const router = new express.Router()
 router.get("/logout", isLoggedInMiddleware, (req, res) => {
   try {
     req.logout();
-    res.redirect("/trades");
+    res.redirect("/");
   } catch (e) {
     res.status(400).send("Error in /logout route");
   }

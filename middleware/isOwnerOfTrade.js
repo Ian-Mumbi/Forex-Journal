@@ -7,12 +7,12 @@ module.exports = async ( req, res, next ) => {
             if (trade.trader.id.equals(req.user._id)) {
                 next()
             } else {
-                res.render('index')
+                res.redirect('/trades')
             }
         }).catch( ( e ) => {
-            res.render("index");
+           res.redirect("/trades");
         })
     } else {
-        res.render("index");
+        res.redirect("/trades");
     }
 }

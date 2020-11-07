@@ -38,8 +38,14 @@ router.post("/trades", isLoggedInMiddleware, async (req, res) => {
       username: req.user.username,
     };
 
-    const trade = new Trade({ ...req.body, trader });
+    // Control trade inputs before creating a new trade
+    const tradeInputFromUser = { ...req.body }
 
+    tradeInputFromUser.currencyPair = tradeInputFromUser.currencyPair.toUpperCase();
+    tradeInputFromUser.orderType = tradeInputFromUser.orderType.toUpperCase();
+    console.log('tradeInputFromUser', tradeInputFromUser)
+    const trade = new Trade({ ...tradeInputFromUser, trader });
+    console.log('Actual trade', trade)
     await trade.save();
     res.redirect("/trades");
   } catch (e) {
@@ -84,14 +90,17 @@ router.get("/trades/:id", isOwnerOfTradeMiddleware, async (req, res) => {
 
     await tradeToView.populate('comments').execPopulate().then((trade) => {
       
-      
+      console.log('TRADE', trade.comments.map(( c ) => moment(c.updatedAt).fromNow()))
       res.render("trades/trade-view", {
         trade,
         date,
         index: index + 1,
         sortBy,
         toggler: req.query.toggler,
-        commentTime
+        commentTime,
+        commentTimeArray: trade.comments.map((c) =>
+          moment(c.updatedAt).fromNow()
+        ),
       });
     }).catch(e => console.log('error',e))
 
@@ -105,6 +114,7 @@ router.get("/trades/:id", isOwnerOfTradeMiddleware, async (req, res) => {
 router.post("/trades/:id/summary", isOwnerOfTradeMiddleware, async (req, res) => {
   try {
     const sortBy = encodeURIComponent(req.body.sort);
+    req.flash('success', 'Sorted by ' + sortBy.toUpperCase())
     res.redirect(
       "/trades/" + req.params.id + "?sort=" + sortBy + "&toggler=" + true
     );
@@ -133,6 +143,7 @@ router.patch("/trades/:id/edit", isOwnerOfTradeMiddleware, async (req, res) => {
     const idOfTradeToBeUpdated = req.params.id;
     const updatedData = req.body;
     await Trade.findByIdAndUpdate(idOfTradeToBeUpdated, updatedData);
+    req.flash('success', 'Trade updated!')
     res.redirect("/trades/" + req.params.id);
   } catch (e) {
     res

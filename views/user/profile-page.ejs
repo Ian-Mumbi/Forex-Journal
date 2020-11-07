@@ -1,13 +1,38 @@
 <%- include ('../partials/header') %>
 
-<h1>Welcome to your profile page <%= currentUser.username %></h1>
-
-
-<form action="/upload" method="POST" enctype="multipart/form-data"> 
-    <div class="form-group">
-        <input type="file" name="uploaded_file" class="form-control-file">
-        <button class="btn btn-default">Save</button>
+<div class="container">
+    <div class="center-profile-image">
+        <figure class="figure">
+            <img src="/profile.png" alt="Profile picture" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption"><h1><%= user %></h1></figcaption>
+        </figure>
+        <button class="btn btn-info" id="show-profile">Change Profile</button>
+        <div id="choose-profile">
+            
+        </div>
     </div>
-</form>
+    <h2><em><u>Current State of your Portfolio</u></em></h2>
+    <h3>Number of Trades: <strong><%= numberOfTrades %></strong> <em>trade(s)</em></h3>
+    <h3>Current Total Profit/Loss: <strong>$<%= profitOrLoss %></strong></h3>
+    <h3>Total Number of Profitable Trades: <strong><%= numberOfProfitTrades %></strong> <em>trade(s)</em></h3>
+    <h3>Total Number of Loss Trades: <strong><%= numberOfLossTrades %></strong> <em>trade(s)</em></h3>
+    <h3>Total Number of Lots traded: <strong><%= totalLots %></strong> <em>Lot(s)</em></h3>
+    <h3>Average number of Lots traded: <strong><%= avgLotSize %></strong> <em>Lot(s)</em></h3>
+    <h3>Number of unique currency pairs traded: <strong><%= numberOfUniqueTrades %></strong> <em>Currency Pairs</em></h3>
+
+    <div class="form-group">
+        <form action="/users/<%= userId %>?_method=DELETE" method="POST" class="delete-button">
+            <button class="btn btn-large btn-danger">Delete Account</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>
+            Contact me for any queries/suggestions I would really appreciate any feedback to make this app better 
+        </p>
+        <p>I will reply as soon as I can personally. Thank you. :)</p>
+        <p><em>ianmumbi44@gmail.com</em></p>
+    </footer>
+</div>
 
 <%- include ('../partials/footer') %>

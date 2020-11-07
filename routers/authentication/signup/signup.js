@@ -1,6 +1,7 @@
 const express = require('express')
 const passport = require('passport')
 const User = require('../../../models/user')
+const signUpEmail = require('../../../emails/accounts')
 
 const router = new express.Router()
 
@@ -21,12 +22,15 @@ router.post("/signup", (req, res) => {
     
     User.register(newUser, password, (error, user) => {
       if (error) {
-        console.log(error)
-        return res.render("authorization/signup");
+        console.log('SIGNUP ERROR', error)
+        req.flash('error', error.message)
+        return res.redirect("/signup");
       }
 
       passport.authenticate("local")(req, res, () => {
-        res.redirect("/trades");
+        // signUpEmail.signUpEmail(email, username)
+        req.flash('success', 'Successfully signed up! Welcome ' + username)
+        res.status(200).redirect("/trades");
       });
     });
   } catch (e) {

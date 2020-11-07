@@ -5,7 +5,6 @@ const passportLocalMongoose = require('passport-local-mongoose')
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true,
   },
   email: {
     type: String,
@@ -17,6 +16,9 @@ const userSchema = new mongoose.Schema({
       }
     },
   },
+  profile: {
+    type: Buffer
+  },
   password: {
     type: String,
     validate(value) {
@@ -24,10 +26,6 @@ const userSchema = new mongoose.Schema({
         throw new Error("Invalid password provided.");
       }
     },
-  },
-  profile: {
-    data: Buffer,
-    contentType: String
   }
 });
 
