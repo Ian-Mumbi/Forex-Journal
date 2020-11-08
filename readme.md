@@ -12,4 +12,6 @@ In one of the later sections, they recommend that a trader keep a Trading Journa
 
 I decided to develop a web application that is a little more flexible. Offering trade summaries for example noting trades for particlar days e.g you may not be aware that you are most profitable when you trade on certain days and less profitable on other days. You may also be profitable trading some currency pairs compared to others. When you note down more trades, the app will be able to give you such trade summaries that you may not be able to track by yourself effectively. 
 
-> I have not yet deployed the application as it is still under development but I will update this readme as soon as I do. Keep you updated!!
+I have finally deployed the application to the link below:
+
+> <a href="https://mumbi-forex-journal.herokuapp.com/">Forez Journal</a>
