@@ -14,4 +14,4 @@ I decided to develop a web application that is a little more flexible. Offering 
 
 I have finally deployed the application to the link below:
 
-> <a href="https://mumbi-forex-journal.herokuapp.com/">Forez Journal</a>
+> <a href="https://mumbi-forex-journal.herokuapp.com/">Forex Journal Application</a>
