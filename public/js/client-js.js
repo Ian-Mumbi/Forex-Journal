@@ -19,7 +19,7 @@ if (button) {
             document.querySelector("#choose-profile").innerHTML = "";
         } else {
             document.querySelector("#choose-profile").innerHTML = `
-            <form action="/profile" method="POST" enctype="multipart/form-data" accept=".jpg,.jpeg,.png"> 
+            <form action="/profile" method="POST" enctype="multipart/form-data" accept=".jpg"> 
                     <div class="form-group">
                         <div class="form-group">
                             <label>

@@ -47,6 +47,7 @@ router.get('/profile', isLoggedInMiddleware, async ( req, res ) => {
         res.render('user/profile-page', {user: req.user.username, userId: req.user._id, numberOfTrades, profitOrLoss,
         numberOfProfitTrades, numberOfLossTrades, avgLotSize, totalLots, numberOfUniqueTrades})
     } catch (e) {
+        console.log(e)
         res.status(400).send('Error in /upload GET')
     }
 })

@@ -4,13 +4,13 @@ module.exports = {
   sortTrades: (trades, sortBy = "profit") => {
     return trades.sort((a, b) => {
       if (sortBy === "date") {
-        if ( moment(a[sortBy]).valueOf() < moment(b[sortBy]).valueOf() ) {
-          return 1
+        if (moment(a[sortBy]).valueOf() < moment(b[sortBy]).valueOf()) {
+          return 1;
         } else {
-          return -1
+          return -1;
         }
       }
-      
+
       if (a[sortBy] < b[sortBy]) {
         return 1;
       } else {
@@ -20,7 +20,10 @@ module.exports = {
   },
 
   getSum: (trades) =>
-    trades.map((trade) => trade.profit).reduce((prev, curr) => prev + curr).toFixed(2),
+    trades
+      .map((trade) => trade.profit)
+      .reduce((prev, curr) => prev + curr, 0)
+      .toFixed(2),
 
   getTradesOnSameDay: (trades) =>
     trades
@@ -37,7 +40,8 @@ module.exports = {
 
     const totalProfitOnSameDay = tradesSame
       .map((trade) => trade.profit)
-      .reduce((prev, curr) => prev + curr).toFixed(2);
+      .reduce((prev, curr) => prev + curr, 0)
+      .toFixed(2);
 
     return { tradesSame, totalProfitOnSameDay };
   },
@@ -55,7 +59,7 @@ module.exports = {
 
     let buyOrders = buySellOrders
       .map((order) => order.toUpperCase() === "BUY")
-      .reduce((prev, curr) => prev + curr);
+      .reduce((prev, curr) => prev + curr, 0);
     if (buyOrders === true) {
       buyOrders = 1;
     } else if (buyOrders === false) {
@@ -109,10 +113,15 @@ module.exports = {
   },
   getLotTotalAndAverage: (trades) => {
     const lots = trades.map((trade) => trade.lotSize);
-    const totalLots = lots.reduce((prev, curr) => prev + curr).toFixed(2);
+    const totalLots = lots.reduce((prev, curr) => prev + curr, 0).toFixed(2);
     const avgLots = (totalLots / lots.length).toFixed(2);
-    return { totalLots, avgLots };
+    return {
+      totalLots,
+      avgLots: lots.length > 0 || totalLots > 0 ? avgLots : 0,
+    };
   },
   // Get unique items from an array
-  getNumberOfUniqueTrades: (trades) => trades.map(( trade ) => trade.currencyPair ).filter( ( trade, index, array ) => array.indexOf(trade) === index ).length,
+  // getNumberOfUniqueTrades: (trades) => trades.map(( trade ) => trade.currencyPair ).filter( ( trade, index, array ) => array.indexOf(trade) === index ).length,
+  getNumberOfUniqueTrades: (trades) =>
+    new Set(trades.map((trade) => trade.currencyPair)).size,
 };
