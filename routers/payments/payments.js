@@ -11,9 +11,9 @@ paypal.configure({
 
 router.get('/pay', ( req, res ) =>  res.render('payments/payments.ejs'))
 
-router.post("/pay", (req, res) => {
+router.get("/buy", (req, res) => {
   const create_payment_json = {
-    intent: "sale",
+    intent: "authorize",
     payer: {
       payment_method: "paypal",
     },
@@ -23,38 +23,34 @@ router.post("/pay", (req, res) => {
     },
     transactions: [
       {
-        item_list: {
-          items: [
-            {
-              name: "Journal App",
-              price: "20.00",
-              currency: "USD",
-            },
-          ],
-        },
         amount: {
+          total: 39.0,
           currency: "USD",
-          total: "20.00",
         },
-        description: "Official Enterprise version Forex Journal Application",
+        description: " Forex Journal Application ",
       },
     ],
   };
 
-  paypal.payment.create(create_payment_json, ( error, payment ) => {
-    if (error) {
-      console.log(error);
-    } else {
-      for (let i = 0; i < payment.links.length; i++) {
-        if (payment.links[i].rel === "approval_url") {
-          res.redirect(payment.links[i].href);
-        }
+  createPay(create_payment_json).then(( transaction ) => {
+    let id = transaction.id
+    let links = transaction.links
+    let counter = links.length
+
+    while (counter--) {
+      if (links[counter].method == "REDIRECT") {
+        // redirect to paypal where user approves the transaction
+        return res.redirect(links[counter].href);
       }
     }
-  });
+  }).catch(( e ) => {
+    console.log(e)
+    res.send({ error: 'Error has occurred' })
+  })
 });
 
 router.get("/success", (req, res) => {
+  console.log('QUERY IN SUCCESS ROUTE ', req.query)
   const payerId = req.query.PayerID;
   const paymentId = req.query.paymentId;
 
@@ -64,7 +60,7 @@ router.get("/success", (req, res) => {
       {
         amount: {
           currency: "USD",
-          total: "20.00",
+          total: "39.00",
         },
       },
     ],
@@ -76,14 +72,29 @@ router.get("/success", (req, res) => {
   ) {
     if (error) {
       console.log(error.response);
-      throw new Error(error);
+      return res.redirect('/cancel');
     } else {
-      console.log(JSON.stringify(payment));
-      res.send("success");
+      console.log('STRINGIFIED PAYMENT ', JSON.stringify(payment));
+      return res.render("payments/success.ejs");
     }
   });
 });
 
-router.get("/cancel", (req, res) => res.send("Cancelled"));
+router.get("/cancel", (req, res) => {
+  console.log("QUERY IN ERROR ROUTE ", req.query);
+  res.render("payments/err.ejs");
+});
+
+const createPay = (payment) => {
+  return new Promise((resolve, reject) => {
+    paypal.payment.create(payment, function (err, payment) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(payment);
+      }
+    });
+  });
+};	
 
 module.exports = router
