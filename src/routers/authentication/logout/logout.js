@@ -1,6 +1,6 @@
 const express = require('express')
 
-const isLoggedInMiddleware = require('../../../middleware/isLoggedIn')
+const isLoggedInMiddleware = require("../../../../middleware/isLoggedIn");
 
 const router = new express.Router()
 

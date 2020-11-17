@@ -1,10 +1,10 @@
 const express = require('express')
 
-const isLoggedinMiddleware = require('../../middleware/isLoggedIn')
-const isOwnerOfCommentMiddleware = require('../../middleware/isOwnerOfComment')
+const isLoggedinMiddleware = require("../../../middleware/isLoggedIn");
+const isOwnerOfCommentMiddleware = require("../../../middleware/isOwnerOfComment");
 
-const Trade = require('../../models/trades')
-const Comment = require('../../models/comment')
+const Trade = require("../../../models/trades");
+const Comment = require("../../../models/comment");
 
 const router = new express.Router()
 

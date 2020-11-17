@@ -11,15 +11,15 @@ const User = require("./models/user");
 require("./DB/db");
 
 // ROUTER
-const homePageRouter = require("./routers/homePage/index"),
-  tradesRouter = require("./routers/Trades/trades"),
-  signupRouter = require("./routers/authentication/signup/signup"),
-  loginRouter = require("./routers/authentication/login/login"),
-  logoutRouter = require("./routers/authentication/logout/logout"),
-  commentRouter = require("./routers/comments/comments"),
-  profileRouter = require("./routers/profile/profile"),
-  paymentRouter = require("./routers/payments/payments"),
-  summaryRouter = require("./routers/Summary/summary");
+const homePageRouter = require("./src/routers/homePage/index"),
+  tradesRouter = require("./src/routers/Trades/trades"),
+  signupRouter = require("./src/routers/authentication/signup/signup"),
+  loginRouter = require("./src/routers/authentication/login/login"),
+  logoutRouter = require("./src/routers/authentication/logout/logout"),
+  commentRouter = require("./src/routers/comments/comments"),
+  profileRouter = require("./src/routers/profile/profile"),
+  paymentRouter = require("./src/routers/payments/payments"),
+  summaryRouter = require("./src/routers/Summary/summary");
 
 const app = express();
 

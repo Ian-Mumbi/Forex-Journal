@@ -2,13 +2,13 @@ const express = require('express'),
       moment = require('moment')
 
 
-const Trade = require('../../models/trades'),
-      Comment = require('../../models/comment')
+const Trade = require('../../../models/trades'),
+      Comment = require('../../../models/comment')
 
-const isLoggedInMiddleware = require('../../middleware/isLoggedIn'),
-      isOwnerOfTradeMiddleware = require('../../middleware/isOwnerOfTrade')
+const isLoggedInMiddleware = require("../../../middleware/isLoggedIn"),
+  isOwnerOfTradeMiddleware = require("../../../middleware/isOwnerOfTrade");
 
-const { sortTrades } = require('../../summariseTradesFunc/summary')
+const { sortTrades } = require("../../summariseTradesFunc/summary");
 
 const router = new express.Router()
 

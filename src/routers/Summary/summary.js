@@ -2,19 +2,19 @@ const express = require('express')
 const moment = require('moment')
 
 
-const Trade = require('../../models/trades')
-const hasTrades = require('../../middleware/hasTrades')
+const Trade = require("../../../models/trades");
+const hasTrades = require("../../../middleware/hasTrades");
 
-const isLoggedInMiddleware = require('../../middleware/isLoggedIn')
-const { 
-    getSum, 
-    getTradesOnSameDay, 
-    getProfitOfTradesOnSameDay,
-    getNumberOfBuySellOrders,
-    checkProfitNotNull,
-    getDay,
-    prettyPrintTrades
-} = require('../../summariseTradesFunc/summary')
+const isLoggedInMiddleware = require("../../../middleware/isLoggedIn");
+const {
+  getSum,
+  getTradesOnSameDay,
+  getProfitOfTradesOnSameDay,
+  getNumberOfBuySellOrders,
+  checkProfitNotNull,
+  getDay,
+  prettyPrintTrades,
+} = require("../../summariseTradesFunc/summary");
 
 const router = new express.Router()
 

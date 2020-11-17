@@ -4,19 +4,21 @@ const sharp = require('sharp')
 const path = require("path");
 const fs = require("fs");
 
-const User = require('../../models/user')
+const User = require("../../../models/user");
 
-const Trade = require('../../models/trades')
+const Trade = require("../../../models/trades");
 
-const Comment = require('../../models/comment')
+const Comment = require("../../../models/comment");
 
-const {getSum, 
-    getNumberOfProfitOrLossTrades, 
-    getLotTotalAndAverage,
-    getNumberOfUniqueTrades
-} = require('../../summariseTradesFunc/summary')
+const {
+  getSum,
+  getNumberOfProfitOrLossTrades,
+  getLotTotalAndAverage,
+  getNumberOfUniqueTrades,
+  getPercentProfitable
+} = require("../../summariseTradesFunc/summary");
 
-const isLoggedInMiddleware = require('../../middleware/isLoggedIn');
+const isLoggedInMiddleware = require("../../../middleware/isLoggedIn");
 
 const router = new express.Router()
 
@@ -43,9 +45,10 @@ router.get('/profile', isLoggedInMiddleware, async ( req, res ) => {
         const avgLotSize = getLotTotalAndAverage(trades).avgLots
         const totalLots = getLotTotalAndAverage(trades).totalLots
         const numberOfUniqueTrades = getNumberOfUniqueTrades(trades)
+        const percentProfitable = getPercentProfitable(trades)
 
         res.render('user/profile-page', {user: req.user.username, userId: req.user._id, numberOfTrades, profitOrLoss,
-        numberOfProfitTrades, numberOfLossTrades, avgLotSize, totalLots, numberOfUniqueTrades})
+        numberOfProfitTrades, numberOfLossTrades, avgLotSize, totalLots, numberOfUniqueTrades, percentProfitable})
     } catch (e) {
         console.log(e)
         res.status(400).send('Error in /upload GET')

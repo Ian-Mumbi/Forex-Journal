@@ -124,4 +124,11 @@ module.exports = {
   // getNumberOfUniqueTrades: (trades) => trades.map(( trade ) => trade.currencyPair ).filter( ( trade, index, array ) => array.indexOf(trade) === index ).length,
   getNumberOfUniqueTrades: (trades) =>
     new Set(trades.map((trade) => trade.currencyPair)).size,
+    
+  getPercentProfitable: ( trades ) => {
+    const numberProfitableTrades = trades.map( ( trade ) => trade.profit )
+    .filter(( tradeReturn ) => tradeReturn > 0 ).length
+    const percentProfitable = ( numberProfitableTrades / trades.length ) * 100;
+    return numberProfitableTrades > 0 && trades.length > 0 ? percentProfitable : 0
+  }
 };

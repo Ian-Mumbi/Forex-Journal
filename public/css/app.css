@@ -81,7 +81,7 @@ p a .completed {
 #profile-image-preview {
     height: 40px;
     width: 40px;
-    background-color: red;
+    background-color: white;
     display: inline-block;
     margin-top: 5px;
 }

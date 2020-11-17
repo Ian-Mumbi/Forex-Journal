@@ -40,3 +40,10 @@ if (button) {
         }
     });
 }
+
+// RESTRICT DATE USER SEES TO BE A MAXIMUM OF TODAY NOT IN THE FUTURE
+let date = document.querySelector("#selectTradeDate");
+
+if (date) {
+    date.max = new Date().toISOString().split("T")[0];
+}
