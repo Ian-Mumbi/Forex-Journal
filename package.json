@@ -6,10 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "env-cmd -f ./config/dev.env nodemon -e js,ejs,css,scss,html app.js",
-    "test": "env-cmd -f ./config/test.env jest --watchAll",
-    "dev-server": "webpack serve --mode development",
-    "build": "webpack serve --mode production",
-    "webpack": "webpack"
+    "test": "env-cmd -f ./config/test.env jest --watchAll"
   },
   "jest": {
     "testEnvironment": "node"
