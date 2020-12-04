@@ -2,17 +2,18 @@
 <div class="container">
     <div class="jumbotron">
         <div class="main-header-trades">
-            <h1><%= currentUser.username %>, <% if (trades.length > 1) { %>
+            <h1><i class="fa fa-user-circle-o"></i> <%= currentUser.username %>, <% if (trades.length > 1) { %>
                 <%= " here are all your"%> <%=trades.length%> <%="trades"%>.
             <% } else if (trades.length === 1) { %>
                 <%= " here is your "%> <%= trades.length %> <%= "trade" %>.
             <% } else { %>
                 <%= "you currently have no trades."%>
             <% } %> </h1>
-            <a href="/trades/new" class="btn btn-large btn-primary">Create Trade</a>
+            <a href="/trades/new" class="btn btn-large btn-primary"><i class="fa fa-plus-circle"></i> Create Trade</a>
             <% if (trades.length !== 0) { %>
-                <a href="/summary" class="btn btn-large btn-success">Get Summary</a>
+                <a href="/summary" class="btn btn-large btn-success"><i class="fa fa-list-alt"></i> Get Summary</a>
             <% } %>
+            <a href="/logs" class="btn btn-large btn-primary"><i class="fa fa-history"></i> <i class="fa fa-arrow-circle-right"></i> <i class="fa fa-cloud-upload"></i> Upload your account history</a>
         </div>
     </div>
     <% if (trades.length > 1) { %>
@@ -33,18 +34,34 @@
     <% } %>
     <div class="container">
         <div class="trades-list">
-            <ol class="list-group">
+            <div class="list-group">
                 <% trades.forEach(( trade ) => { %>
                     <% if (trade.trader.id.equals(user._id)) { %>
                         <% if (!trade.profit) { %>
-                            <li class="list-group-item list-group-item-danger"><a class="completed" href="/trades/<%= trade._id %>"><%= trade.description %></a></li>
+                            <a href="/trades/<%= trade._id %>" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h2 class="mb-1"><%= trade.description %></h2>
+                                    <small><%= trade.date %></small>
+                                </div>
+                                <p class="mb-1">You took this trade on <em><strong><%= trade.date %></strong></em> for
+                            <strong><%= trade.currencyPair %></strong>. It was a <strong><%= trade.orderType %></strong>
+                            order.</p>
+                            </a>
                         <% } else { %>
-                            <li class="list-group-item"><a href="/trades/<%= trade._id %>"><%= trade.description %></a></li>
+                            <a href="trades/<%= trade._id%>" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h2 class="mb-1"><%= trade.description %></h2>
+                                    <small class="date-trades-view-small"><%= trade.date %></small>
+                                </div>
+                                <p class="mb-1">You took this trade on <em><strong class="date-trades-view-main"><%= trade.date %></strong></em> for
+                            <strong><%= trade.currencyPair %></strong>. It was a <strong><%= trade.orderType %></strong>
+                            order.</p>
+                            </a>
                         <% } %>
-
                     <% } %>
+
                 <% }) %>
-            </ol>
+            </div>
         </div>
     </div>
 </div>

@@ -56,17 +56,22 @@ router.get('/profile', isLoggedInMiddleware, async ( req, res ) => {
 })
 
 router.post('/profile', isLoggedInMiddleware, upload.single('uploaded_file'), async ( req, res ) => {
-    const bufferOfModifiedImage = await sharp(req.file.buffer).resize({ width: 250, height: 250}).png().toBuffer()
-    req.user.profile = bufferOfModifiedImage;
-    await req.user.save()
-    req.flash('success', 'Profile updated successfully!')
-    return res.redirect('/profile')
+    if (req.file) { // Only process file data if available
+        const bufferOfModifiedImage = await sharp(req.file.buffer)
+          .resize({ width: 250, height: 250 })
+          .png()
+          .toBuffer();
+        req.user.profile = bufferOfModifiedImage;
+        await req.user.save();
+        req.flash("success", "Profile updated successfully!");
+        return res.redirect("/profile");
+    }
 }, ( error, req, res, next ) => {
     req.flash("error", error.message);
     res.redirect('/profile')
 })
 
-router.get('/profile.png', async ( req, res ) => {
+router.get('/profile.png', isLoggedInMiddleware, async ( req, res ) => {
     try {
         const user = await User.findById(req.user._id)
 
@@ -74,7 +79,7 @@ router.get('/profile.png', async ( req, res ) => {
             if ( !user.profile ) {
                 const imgPath = path.resolve(
                   __dirname,
-                  "../../",
+                  "../../../",
                   "public",
                   "images",
                   "default-profile.png"
@@ -111,7 +116,7 @@ router.delete('/profile/delete', isLoggedInMiddleware, async ( req, res ) => {
     }
 })
 
-router.delete("/users/:id", async (req, res) => {
+router.delete("/users/:id", isLoggedInMiddleware, async (req, res) => {
   try {
     const deletedUser = await User.findByIdAndDelete(req.params.id)
 

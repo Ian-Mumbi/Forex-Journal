@@ -9,10 +9,15 @@
                     <input type="text" name="username" placeholder="Username" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" class="form-control">
+                    <input type="password" name="password" placeholder="Password" class="form-control password-input">
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-lg btn-success btn-block">Login</button>
+                    <label>Show Password
+                        <input type="checkbox" name="checkbox" class="checkbox-input" onclick="toggleShowPassword()">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-success btn-block"><i class="fa fa-sign-out"></i> Login</button>
                 </div>
             </form>
             <p>Not yet signed up? Sign up <a href="/signup">here</a></p>

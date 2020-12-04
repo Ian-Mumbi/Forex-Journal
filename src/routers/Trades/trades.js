@@ -84,7 +84,7 @@ router.get("/trades/:id", isOwnerOfTradeMiddleware, async (req, res) => {
 
     const index = trades.findIndex((trade) => trade.equals(tradeToView));
 
-    const date = moment(tradeToView.date).format('dddd, Mo MMMM YYYY')
+    const date = moment(tradeToView.date).format('dddd, Do MMMM YYYY')
 
     const commentTime = moment().fromNow()
 

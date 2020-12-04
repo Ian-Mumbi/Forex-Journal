@@ -1,0 +1,20 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1><i class="fa fa-history"></i> Use your own Trade History</h1>
+    </div>
+    <p>Download the script below, save it to your platform's data folder under Scripts, restart your platform then drag it to your MT4 chart</p>
+    <div><a href="/download" class="btn btn-small btn-primary"><i class="fa fa-cloud-download"></i> Download File</a></div>
+
+    <p>Upload the resulting file. You will find it under the directory named "Files" in your data folder</p>
+    <form action="/logs" method="POST" enctype="multipart/form-data">
+        <div class="file btn btn-small btn-success upload-div">
+            <i class="fa fa-cloud-upload"></i> Upload File
+            <input type="file" name="logFile" class="upload-input">
+        </div>
+        <button class="btn btn-default">Submit</button>
+    </form>
+</div>
+
+<%- include ('../partials/footer') %>

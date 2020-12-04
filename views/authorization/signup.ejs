@@ -12,10 +12,15 @@
                     <input type="email" name="email" placeholder="Email" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" class="form-control">
+                    <input type="password" name="password" placeholder="Password" class="form-control password-input">
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-lg btn-success btn-block">Signup</button>
+                    <label>Show Password
+                        <input type="checkbox" name="checkbox" class="checkbox-input" onclick="toggleShowPassword()">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-success btn-block"><i class="fa fa-sign-out"></i> Signup</button>
                 </div>
             </form>
             <p>Already signed in? Log in <a href="/login">here</a></p>

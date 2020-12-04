@@ -19,7 +19,8 @@ const homePageRouter = require("./src/routers/homePage/index"),
   commentRouter = require("./src/routers/comments/comments"),
   profileRouter = require("./src/routers/profile/profile"),
   paymentRouter = require("./src/routers/payments/payments"),
-  summaryRouter = require("./src/routers/Summary/summary");
+  summaryRouter = require("./src/routers/Summary/summary"),
+  terminalHistoryLogsRouter = require('./src/routers/terminalHistoryLogs/terminalHistoryLogs');
 
 const app = express();
 
@@ -69,6 +70,7 @@ app.use(logoutRouter);
 app.use(commentRouter);
 app.use(profileRouter);
 app.use(summaryRouter);
-app.use(paymentRouter)
+app.use(paymentRouter);
+app.use(terminalHistoryLogsRouter);
 
 module.exports = app

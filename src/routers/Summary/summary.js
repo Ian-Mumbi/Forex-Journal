@@ -14,6 +14,7 @@ const {
   checkProfitNotNull,
   getDay,
   prettyPrintTrades,
+  checkIfCurrencyPairIsProfitable
 } = require("../../summariseTradesFunc/summary");
 
 const router = new express.Router()
@@ -23,7 +24,6 @@ router.get('/summary', isLoggedInMiddleware, hasTrades, async ( req, res ) => {
         const trader = { id: req.user._id, username: req.user.username };
 
         let trades = await Trade.find({ trader });
-        console.log(trades)
 
         const numberOfZeroProfitTrades = checkProfitNotNull(trades).length;
 
@@ -41,7 +41,9 @@ router.get('/summary', isLoggedInMiddleware, hasTrades, async ( req, res ) => {
           sellOrders,
           currencyPairs,
           buyPairs,
-          sellPairs;
+          sellPairs,
+          isProfitableBuy,
+          isProfitableSell;
 
         if ( tradesOccurredToday.length !== 0 ) {
           numberOftradesOnSameDay = tradesOccurredToday.length;
@@ -58,8 +60,10 @@ router.get('/summary', isLoggedInMiddleware, hasTrades, async ( req, res ) => {
           buyOrders = getNumberOfBuySellOrders(tradesOnSameDay).buyOrders
           sellOrders = getNumberOfBuySellOrders(tradesOnSameDay).sellOrders
           currencyPairs = getNumberOfBuySellOrders(tradesOnSameDay).currencyPairs
-          buyPairs = prettyPrintTrades(currencyPairs.buyCurrencyPairs)
-          sellPairs = prettyPrintTrades(currencyPairs.sellCurrencyPairs);
+          isProfitableBuy = checkIfCurrencyPairIsProfitable(currencyPairs.buyCurrencyPairs, trades, 'buy')
+          isProfitableSell = checkIfCurrencyPairIsProfitable(currencyPairs.sellCurrencyPairs, trades, 'sell')
+          buyPairs = prettyPrintTrades(currencyPairs.buyCurrencyPairs, isProfitableBuy)
+          sellPairs = prettyPrintTrades(currencyPairs.sellCurrencyPairs, isProfitableSell);
 
         } else {
           dayOfTrade = getDay(undefined, true)
@@ -80,6 +84,7 @@ router.get('/summary', isLoggedInMiddleware, hasTrades, async ( req, res ) => {
           sellPairs
         });
     } catch (e) {
+      console.log(e)
         res.status(400).send('Error in summary page.')
     }
 })

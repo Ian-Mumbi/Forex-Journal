@@ -51,11 +51,11 @@ module.exports = {
 
     const buyCurrencyPairs = trades
       .filter((trade) => trade.orderType.toUpperCase() === "BUY")
-      .map((trade) => trade.currencyPair);
+      .map((trade) => trade.currencyPair.toUpperCase());
 
     const sellCurrencyPairs = trades
       .filter((trade) => trade.orderType.toUpperCase() === "SELL")
-      .map((trade) => trade.currencyPair);
+      .map((trade) => trade.currencyPair.toUpperCase());
 
     let buyOrders = buySellOrders
       .map((order) => order.toUpperCase() === "BUY")
@@ -74,15 +74,16 @@ module.exports = {
     };
   },
 
-  prettyPrintTrades: (trades) => {
+  prettyPrintTrades: (pairs, pairsObject) => {
     let myCounts = {};
-    for (let i = 0; i < trades.length; i++) {
-      let len = trades.filter((trade) => trade === trades[i]).length;
-      myCounts[trades[i]] = len;
+    console.log(pairsObject)
+    for (let i = 0; i < pairs.length; i++) {
+      let len = pairs.filter((trade) => trade === pairs[i]).length;
+      myCounts[pairs[i]] = len;
     }
     let summary = ``;
-    Object.keys(myCounts).forEach((trade) => {
-      summary += `${trade}(x ${myCounts[trade]}) `;
+    Object.keys(myCounts).forEach((pair) => {
+      summary += `${pair}(x ${myCounts[pair]}) - [${pairsObject[pair]}] `;
     });
     return summary;
   },
@@ -129,6 +130,22 @@ module.exports = {
     const numberProfitableTrades = trades.map( ( trade ) => trade.profit )
     .filter(( tradeReturn ) => tradeReturn > 0 ).length
     const percentProfitable = ( numberProfitableTrades / trades.length ) * 100;
-    return numberProfitableTrades > 0 && trades.length > 0 ? percentProfitable : 0
+    return numberProfitableTrades > 0 && trades.length > 0 ? percentProfitable.toFixed(2) : 0
+  },
+
+  checkIfCurrencyPairIsProfitable: ( pairs, trades, orderType ) => {
+    const pairIsProfitObject = Object()
+    const uniquePairs = new Set(pairs)
+    uniquePairs.forEach((pair) => {
+      let sum = trades
+        .filter(
+          (trade) => trade.currencyPair.toLowerCase() === pair.toLowerCase() && 
+          trade.orderType.toLowerCase() === orderType.toLowerCase()
+        )
+        .map((trade) => (trade.profit ? trade.profit : 0))
+        .reduce((prev, curr) => prev + curr, 0);
+      pairIsProfitObject[pair] = sum > 0 ? 'profit': 'loss';
+    });
+    return pairIsProfitObject
   }
 };

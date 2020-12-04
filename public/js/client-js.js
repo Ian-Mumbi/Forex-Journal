@@ -8,17 +8,15 @@ if (button1) {
     });
 }
 
+// TOGGLER TO SHOW CHANGE PROFILE OR NOT
 let show = false
 
-let button = document.querySelector("#show-profile");
-
-if (button) {
-    button.addEventListener("click", (e) => {
-        show = !show
-        if (show) {
-            document.querySelector("#choose-profile").innerHTML = "";
-        } else {
-            document.querySelector("#choose-profile").innerHTML = `
+const toggleShowProfileChangeForm = ( ) => {
+    show = !show;
+    if (show) {
+      document.querySelector("#choose-profile").innerHTML = "";
+    } else {
+      document.querySelector("#choose-profile").innerHTML = `
             <form action="/profile" method="POST" enctype="multipart/form-data" accept=".jpg"> 
                     <div class="form-group">
                         <div class="form-group">
@@ -37,8 +35,7 @@ if (button) {
                     </form>
                 </div>
                 `;
-        }
-    });
+    }
 }
 
 // RESTRICT DATE USER SEES TO BE A MAXIMUM OF TODAY NOT IN THE FUTURE
@@ -46,4 +43,25 @@ let date = document.querySelector("#selectTradeDate");
 
 if (date) {
     date.max = new Date().toISOString().split("T")[0];
+}
+
+// TOGGLE TO SHOW PASSWORD OR HIDE IT
+const passwordInput = document.querySelector('.password-input')
+
+const toggleShowPassword = ( ) => {
+    passwordInput.type === "password"
+      ? (passwordInput.type = "text")
+      : (passwordInput.type = "password");
+}
+
+const dateViewTradesSmall = document.querySelectorAll(".date-trades-view-small");
+
+if ( dateViewTradesSmall ) {
+    dateViewTradesSmall.forEach( date => date.textContent = moment(date.textContent).startOf('day').fromNow())
+}
+
+const dateViewTradesMain = document.querySelectorAll(".date-trades-view-main");
+
+if ( dateViewTradesMain ) {
+    dateViewTradesMain.forEach( date => date.textContent = moment(date.textContent).format('dddd, MMMM Do YYYY'))
 }
