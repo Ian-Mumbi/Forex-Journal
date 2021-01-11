@@ -11,12 +11,14 @@ if (button1) {
 // TOGGLER TO SHOW CHANGE PROFILE OR NOT
 let show = false
 
+let chooseProfile = document.querySelector("#choose-profile");
+
 const toggleShowProfileChangeForm = ( ) => {
     show = !show;
     if (show) {
-      document.querySelector("#choose-profile").innerHTML = "";
+      chooseProfile.innerHTML = "";
     } else {
-      document.querySelector("#choose-profile").innerHTML = `
+      chooseProfile.innerHTML = `
             <form action="/profile" method="POST" enctype="multipart/form-data" accept=".jpg"> 
                     <div class="form-group">
                         <div class="form-group">

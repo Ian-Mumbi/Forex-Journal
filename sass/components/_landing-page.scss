@@ -1,0 +1,44 @@
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url('../images/img.jpg');
+    background-size: cover;
+    background-position: top;
+
+    &__text-box {
+        top: 40%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    &--main {
+        display: block;
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 30px;
+        animation: 2s moveInFromLeft ease-in;
+
+        backface-visibility: hidden;
+    }
+
+    &--sub {
+        display: block;
+        font-weight: 700;
+        font-size: 17px;
+        letter-spacing: 13px;
+        animation: 2s moveInFromRight ease-in;
+    }
+}
